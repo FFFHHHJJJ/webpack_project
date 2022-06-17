@@ -26,6 +26,15 @@ module.exports = {
             {
                 test:/\.less$/i,
                 use:['style-loader','css-loader','less-loader']
+            },
+            {
+                test:/.(gif|png)$/i,
+                type:'asset',
+                parser:{
+                    dataUrlCondition:{
+                        maxSize:2*1024
+                    }
+                }
             }
         ]
     }
