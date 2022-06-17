@@ -22,3 +22,9 @@ document.body.appendChild(png)
 
 // 字体图标
 import './assets/fonts/iconfont.css'
+
+const fn = () => {
+    console.log('高级语法');
+}
+
+console.log(fn);
