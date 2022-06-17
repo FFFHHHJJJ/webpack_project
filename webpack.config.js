@@ -13,11 +13,19 @@ module.exports = {
             template:join(__dirname,'public/index.html')
         })
     ],
+    devServer:{
+        open:true,
+        port:80
+    },
     module:{
         rules:[
             {
                 test:/\.css$/i,
                 use:['style-loader','css-loader']
+            },
+            {
+                test:/\.less$/i,
+                use:['style-loader','css-loader','less-loader']
             }
         ]
     }
