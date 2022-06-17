@@ -28,3 +28,6 @@ const fn = () => {
 }
 
 console.log(fn);
+
+// 引入app.vue
+import app from './app.vue'
