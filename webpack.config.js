@@ -34,6 +34,16 @@ module.exports = {
                     dataUrlCondition:{
                         maxSize:2*1024
                     }
+                },
+                generator:{
+                    filename:'image/[hash:6][ext]'
+                }
+            },
+            {
+                test:/.(eot|svg|ttf|woff|woff2)$/i,
+                type:'asset/resource',
+                generator:{
+                    filename:'font/[hash:6][ext]'
                 }
             }
         ]
